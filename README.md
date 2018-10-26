@@ -9,7 +9,7 @@ MySQL
 3. ``PrimaryKey`` не составной а ``AutoIncrement``
 4. Вместо ``ENUM`` использовать ``TINYINT`` с суфиксом **\_enum**
 5. В каждой таблице поле **added_at** ``TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP``
-6. ``ForeignKey`` по умолчанию ``RESTRICTED``
+6. ``ForeignKey`` по умолчанию ``ON UPDATE RESTRICT ON DELETE SET NULL``
 7. В составных ключах сущности разделяются минусом
 7. Именование ``ForeignKey`` **FK-{table}-{table}**
 8. Именование ``Unique`` **U-{columns}**
